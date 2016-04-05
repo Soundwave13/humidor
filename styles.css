@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Stylesheet for ONLINE HUMIDOR
+*Author: AJ Bisson
+*bissoncreative.com
+1. reset
+2. layout
+3. basic
+4. media queries
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: Helvetica, Veranda, sans-serif;
+	color: #E0E0E0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+	margin-right: -250px;
+}
+.unstyled {
+	line-height: 150%;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration:none;
+	color: #E0E0E0;
+}
+a:visited{
+	color: #E0E0E0;
+}
+a:hover {
+	text-decoration:none;
+	color:#FFFAC4;	
+}
+
+input[type="submit"]:hover{
+    color:#5E5E5E;
+    box-shadow: 1px 1px 3px #000;
+}
+/*=============================2. layout===============================*/
+
+html {
+	font-size: 16px;
+}
+
+img {max-width: 100%; width: 100%}
+
+/*
+*{ 
+	box-sizing:border-box;
+}
+*/
+
+body {
+	margin: 0px 0px auto 0px;
+	padding: 0px;
+	/*from: colorzilla.com*/
+	background: #2c2c2c; /* Old browsers */
+	background: -moz-linear-gradient(top, #2c2c2c 0%, #666666 0%, #474747 0%, #474747 0%, #666666 0%, #595959 0%, #212121 0%, #36393f 31%, #000000 100%, #111111 100%, #1c1c1c 100%, #131313 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c2c2c), color-stop(0%,#666666), color-stop(0%,#474747), color-stop(0%,#474747), color-stop(0%,#666666), color-stop(0%,#595959), color-stop(0%,#212121), color-stop(31%,#36393f), color-stop(100%,#000000), color-stop(100%,#111111), color-stop(100%,#1c1c1c), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #2c2c2c 0%,#666666 0%,#474747 0%,#474747 0%,#666666 0%,#595959 0%,#212121 0%,#36393f 31%,#000000 100%,#111111 100%,#1c1c1c 100%,#131313 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #2c2c2c 0%,#666666 0%,#474747 0%,#474747 0%,#666666 0%,#595959 0%,#212121 0%,#36393f 31%,#000000 100%,#111111 100%,#1c1c1c 100%,#131313 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #2c2c2c 0%,#666666 0%,#474747 0%,#474747 0%,#666666 0%,#595959 0%,#212121 0%,#36393f 31%,#000000 100%,#111111 100%,#1c1c1c 100%,#131313 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #2c2c2c 0%,#666666 0%,#474747 0%,#474747 0%,#666666 0%,#595959 0%,#212121 0%,#36393f 31%,#000000 100%,#111111 100%,#1c1c1c 100%,#131313 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2c2c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+	min-height: 950px;
+}
+
+
+
+h1, h2, h3, h4, h5 {
+	font-family:Helvetica, Veranda, san-serif;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	/*letter-spacing: 0.1em;*/
+	line-height: 150%;
+}
+h4 {
+	background-image: url(images/graphic.png);
+	background-repeat: no-repeat;
+	background-position: top-left; 
+	height: 68px;
+	padding: 0 0 0 85px;
+	margin: 0 0 0 30px;
+}
+
+#wrap {
+	overflow: hidden;
+	max-width: 960px;
+	margin: 0 auto;
+	/*-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;*/
+}
+
+/*=============================3. basic===============================*/
+#dochead{
+	width: 100%;
+	height: 225px;
+	 -webkit-box-shadow: 0px 2px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 2px 5px 0px #4a4a4a;
+    box-shadow: 0px 2px 5px 0px #4a4a4a;
+}
+
+#container{
+	width: 99.5%;
+	max-width: 960px;
+	margin: 0 auto;
+	overflow:hidden;
+}
+
+#header{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 10px;
+	height: 189px;
+}
+
+#logo{
+	width: 50%;
+	height: 235px;
+	margin: 0 auto 0 auto;
+}
+
+/*--------------------------NAV--------------------------*/
+
+#docnav{
+	width: 80%;
+	height: 40px;
+	margin: -55px 28px 0 auto;
+	display: block;
+	font-size: 1.3em;
+}
+
+#nav li{
+	padding: 1% 4%;
+	list-style-type: none;
+	display: inline;
+}
+
+.current-page a{
+	color:#FFFAC4;
+	text-decoration: underline;
+}
+
+#nav li:nth-child(4){
+	/*border-right: none;*/
+}
+
+/*--------------------------BODY--------------------------*/
+
+#docbody{
+	width: 91%;
+	min-height: 520px;
+	margin: 8px auto 0 auto;
+	padding: 15px 5px 5px 27px;
+	color: #E0E0E0;
+	overflow: hidden;
+}
+/*--------------------------FORM--------------------------*/
+
+form{
+	min-height:200px;
+	border-radius:15px;
+	background-color: rgba(188, 198, 207, 0.14);	
+	font-size: 0.95em;
+}
+
+#analyze {
+	padding: 10px;
+	margin-top: 15px;	
+}
+
+#signin{
+	width: 435px;
+	margin: 40px auto 0px auto;
+	padding: 20px;
+}
+#signin td, tr{
+	padding: 4px 11px;
+}
+
+#humidor{
+	width: 842px;
+	margin: 40px auto 60px auto;
+	padding: 10px;
+}
+#humidor td, tr{
+	padding: 4px 5px 12px 20px;
+}
+
+#review{
+	width: 842px;
+	margin: 20px auto 60px auto;
+	padding: 10px;
+}
+#review td, tr{
+	padding: 4px 5px 12px 10px;
+}
+select{
+	border-radius: 5px;
+	padding: 4px 10px 4px 10px;
+}
+
+input{
+	border-radius:8px;
+	padding:2px 11px;
+	line-height: 1.2em;
+}
+
+option{
+	margin: 1px;	
+}
+
+#analyze li{
+	margin-left: 10px;
+}
+
+.analyze{
+	width: 95%;
+}
+
+.analyze tr, td{
+	padding: 2px;
+}
+
+
+/*--------------------------FOOTER--------------------------*/
+
+#docfoot{
+	width: 92%;
+	height: 50px;
+	margin: 5px 0px 50px 47px;
+	padding: 2px;
+}
+
+#footleft{
+	height: 20px;
+	width:100%;
+	margin:57px auto 0 auto;
+}
+
+#footleft a:hover{
+	color: #FFFFFF !important;
+}
+
+#footright{
+	height: 35px;
+	width: 15%;
+	float: right;
+	margin: -20px 0 0 0;
+	text-align:right;
+}
+
